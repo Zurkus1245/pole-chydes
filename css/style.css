@@ -1,0 +1,34 @@
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 90%;
+    margin: auto;
+}
+button {
+    width: 100px;
+    height: 50px;
+    border-radius: 20%;
+    margin-top: 20px;
+}
+div {
+    text-align: center;
+}
+.forbaraban{
+    position: relative;
+}
+.arrow{
+    position: absolute;
+    width: 9%;
+    top:40%;
+    left:45%;
+    transform: rotate(170deg);
+}
+
+#baraban{
+    transform: rotate(0deg);
+    transition: 5s;
+}
