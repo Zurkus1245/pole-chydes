@@ -14,13 +14,7 @@ function start(){//загадывает слово
     console.log('загадано', spisokslov[rnd])
     word = spisokslov[rnd].split('')
     console.log(word)
-    for (i=0;i<word.length;i++){
-        wordgame.push('*')
-    }
-    console.log(wordgame)
-    slovo.innerText = wordgame.join(' ')
-    vopros.innerText +=' '+ wordgame.length +' букв'
-}
+    wordgame = Array.from({ length: word.length }, () => '*');
 
 butbukva.onclick = ugadai
 function ugadai(){
